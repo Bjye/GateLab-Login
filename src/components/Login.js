@@ -45,8 +45,8 @@ const Login=()=>{
                   </div> 
 
                   <div className="TwoButtons2">
-                      <button className="buttonOne1"><img className="imagetwo" src={Image2}/>Signup using Facebook</button>
-                       <button className="buttonTwo2"><img className="imagethree" src={Image3}/>Signup using Twitter</button>
+                      <button className="buttonOne1"><img className="imagetwo" src={Image2} alt="fbimage"/>Signup using Facebook</button>
+                       <button className="buttonTwo2"><img className="imagethree" src={Image3} alt="tweimage" />Signup using Twitter</button>
                   </div>                 
                  </div>
               </form>
