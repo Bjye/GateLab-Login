@@ -52,8 +52,8 @@ const Signup=()=>{
                        <hr className="line1" />
                   </div> 
                   <div className="TwoButtons">
-                      <button className="buttonOne"><img className="imagetwo" src={Image2}/>Signup using Facebook</button>
-                       <button className="buttonTwo"><img className="imagethree" src={Image3}/>Signup using Twitter</button>
+                      <button className="buttonOne"><img className="imagetwo" src={Image2} alt="fbimage" />Signup using Facebook</button>
+                       <button className="buttonTwo"><img className="imagethree" src={Image3} alt="tweimage" />Signup using Twitter</button>
                   </div>                 
                  </div>
               </form>
