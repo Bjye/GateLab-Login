@@ -4,8 +4,7 @@ import Image from "../Images/3D-Secuirty-badge 1.png";
 import Image2 from "../Images/Social Media/Facebook.png";
 import Image3 from "../Images/Social Media/Twitter.png";
 import Image4 from "../Images/Logo.png";
-// import ReactDom from "react-dom";
-// import { Container } from "@mui/material";
+
 
 
 const Signup=()=>{
