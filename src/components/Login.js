@@ -45,8 +45,13 @@ const Login=()=>{
                   </div> 
 
                   <div className="TwoButtons2">
+<<<<<<< HEAD
                       <Button style={{fontSize:'11px', textTransform:'none', marginRight:'10px', backgroundColor:'lightblue', borderRadius:'5px'}} className="buttonOne1"><img className="imagetwo" src={Image2} alt="fbimage"/>Signup with Facebook</Button>
                        <Button  style={{fontSize:'11px', textTransform:'none', marginRight:'5px', backgroundColor:'lightblue', borderRadius:'5px', marginLeft:'5px'}} className="buttonTwo2"><img className="imagethree" src={Image3} alt="twimage"/>Signup with Twitter</Button>
+=======
+                      <button className="buttonOne1"><img className="imagetwo" src={Image2} alt="fbimage"/>Signup using Facebook</button>
+                       <button className="buttonTwo2"><img className="imagethree" src={Image3} alt="tweimage" />Signup using Twitter</button>
+>>>>>>> 4d1ddeb215251fe31175b9b6497d73d7ca451fb0
                   </div>                 
                  </div>
               </form>
