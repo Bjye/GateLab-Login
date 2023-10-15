@@ -4,8 +4,8 @@ import Image from "../Images/3D-Secuirty-badge 1.png";
 import Image2 from "../Images/Social Media/Facebook.png";
 import Image3 from "../Images/Social Media/Twitter.png";
 import Image4 from "../Images/Logo.png";
-// import ReactDom from "react-dom";
-// import { Container } from "@mui/material";
+import {Stack, TextField, Button} from '@mui/material';
+
 
 
 const Signup=()=>{
@@ -24,37 +24,34 @@ const Signup=()=>{
             <div className="div2">
               <form className="Form">
                 <h1 className="accTitle">Create Account</h1>
-                <div className="inputContainer">                  
-                  <input className="Fname" type="text" id="firstName"/>
-                   <label className="labelOne" htmlFor="firstName">FirstName</label>
-                   <div className="inputContainer">
-                         <input className="Lname" type="text" id="Lname" />
-                         <label className="labelOne" htmlFor="Lname">LastName</label>
-                   </div>
-                   <div className="inputContainer">
-                         <input className="Email" type="text" id="email" />
-                         <label className="labelOne" htmlFor="email">Email</label>
-                   </div>
-                   <div className="inputContainer">
-                         <input className="Gender" type="text" id="gender" />
-                         <label className="labelOne" htmlFor="gender">Gender</label>
-                   </div>
-                   <div className="inputContainer">
-                         <input className="Password" type="Password" id="password" />
-                         <label className="labelOne" htmlFor="password">Password</label>
-                   </div>
-                 </div>  
+                  <Stack>
+                    <Stack direction= "row" spacing={4}>
+                    <TextField label="First Name" variant= "outlined" size="small" style={{width:'165px', marginLeft:'65px'}} />
+                    <TextField label="Last Name" variant="outlined" size="small" style={{width:'165px', marginRight:'20px'}} />                  
+                    </Stack>
+                    <Stack direction="row" spacing={4} marginTop={2}>
+                    <TextField label="Email" variant= "outlined" size="small" required style={{width:'165px', marginLeft:'65px'}} />
+                    <TextField label="Gender" variant="outlined" size="small" style={{width:'165px', marginRight:'20px'}} /> 
+                    </Stack>
+                    <Stack marginTop={2}>
+                      <TextField label='Password' type="password" size='small' required style={{width:'363px', marginLeft:'65px'}}/>
+                    </Stack>
+                  </Stack>
+                 
                  <div>
-                  <button className="button1">Create Account</button>
-                  <p className="Stext">Already have an account? <span className="login"><a href="/">Login</a></span></p>
+                 <Stack margin={2}>
+                 <Button variant="contained"  className="button1" style={{marginLeft: "3.2rem", width:'22.6rem', backgroundColor:'#c49650'}}>Create Account</Button>
+                 </Stack>
+                 <p className="Stext">Already have an account? <span className="login"><a href="/">Login</a></span></p>
                   <div className="OrContainer">
                   <hr className="line1" />
                        <p className="Ortext">Or</p>
                        <hr className="line1" />
                   </div> 
                   <div className="TwoButtons">
-                      <button className="buttonOne"><img className="imagetwo" src={Image2}/>Signup using Facebook</button>
-                       <button className="buttonTwo"><img className="imagethree" src={Image3}/>Signup using Twitter</button>
+                       <Button style={{fontSize:'12px', textTransform:'none', marginRight:'35px', backgroundColor:'lightblue', borderRadius:'5px'}} className="buttonOne1"><img className="imagetwo" src={Image2} alt="fbimage"/>Signup with Facebook</Button>
+                       <Button  style={{fontSize:'12px', textTransform:'none', marginRight:'5px', backgroundColor:'lightblue', borderRadius:'5px', marginLeft:'5px'}} className="buttonTwo2"><img className="imagethree" src={Image3} alt="twimage"/>Signup with Twitter</Button>
+                     
                   </div>                 
                  </div>
               </form>

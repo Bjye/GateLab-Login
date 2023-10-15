@@ -1,5 +1,4 @@
 import React from "react";
-// import "../src/components/Style.css";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import {Routes, Route, Link} from "react-router-dom";
@@ -15,6 +14,7 @@ const App=()=>{
     
         <li className="nav-todo"> <Link to="/signup"> <HowToRegIcon/> SignUp </Link></li>
         <li className="nav-todo"> <Link to="/"><InputIcon/> Login </Link> </li>
+        
 
     </ul>
   </nav>
