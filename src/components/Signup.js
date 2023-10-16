@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Style.css";
 import Image from "../Images/3D-Secuirty-badge 1.png";
 import Image2 from "../Images/Social Media/Facebook.png";
 import Image3 from "../Images/Social Media/Twitter.png";
 import Image4 from "../Images/Logo.png";
 import {Stack, TextField, Button} from '@mui/material';
-
+import {Box, MenuItem} from '@mui/material';
 
 
 
 const Signup=()=>{
+
+  const [country, setCountry] = useState('');
+
+const handleChange = (event: React.ChangeEvent<HTMLInputElement>) =>{
+    setCountry(event.target.value)
+}
+
     return(
         <>
           
@@ -32,7 +39,15 @@ const Signup=()=>{
                     </Stack>
                     <Stack direction="row" spacing={4} marginTop={2}>
                     <TextField label="Email" variant= "outlined" size="small" required style={{width:'165px', marginLeft:'65px'}} />
-                    <TextField label="Gender" variant="outlined" size="small" style={{width:'165px', marginRight:'20px'}} /> 
+                    <Box>
+
+                    <TextField label="Gender" variant="outlined" select value={country} onChange={handleChange} size="small" style={{width:'165px', marginRight:'20px'}}>
+                      <MenuItem value='M' style={{ fontSize:'14px',backgroundColor:'#8BF1F3', borderRadius:'5px', marginTop:'-8px'}}>Male</MenuItem>
+                      <MenuItem value='F' style={{ fontSize:'14px',backgroundColor:'#8BF1F3', borderRadius:'5px', paddingBottom:'5px', paddingTop:'4px', marginTop:'1px', marginBottom:'-7px'}}>Female</MenuItem>
+
+                    </TextField>
+                    </Box>
+                    
                     </Stack>
                     <Stack marginTop={2}>
                       <TextField label='Password' type="password" size='small' required style={{width:'363px', marginLeft:'65px'}}/>
